@@ -31,3 +31,19 @@ cc_test(
         "@googletest//:gtest_main",
     ],
 )
+
+cc_test(
+    name = "mem_pool_test",
+    srcs = ["mem_pool_test.cpp"],
+    copts = [
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wpedantic",
+    ],
+    deps = [
+        "//common:mem_pool",
+        "@googletest//:gtest",
+        "@googletest//:gtest_main",
+    ],
+)

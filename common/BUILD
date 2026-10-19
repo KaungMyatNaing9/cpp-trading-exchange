@@ -12,3 +12,9 @@ cc_library(
     visibility = ["//visibility:public"],
     deps = [":perf_utils"],
 )
+
+cc_library(
+    name = "mem_pool",
+    hdrs = ["mem_pool.h"],
+    visibility = ["//visibility:public"],
+)
